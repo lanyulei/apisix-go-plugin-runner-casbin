@@ -20,6 +20,7 @@ package server
 import (
 	"encoding/binary"
 	"fmt"
+	"github.com/jellydator/ttlcache/v2"
 	"net"
 	"os"
 	"os/signal"
@@ -28,12 +29,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/ReneKroon/ttlcache/v2"
-	flatbuffers "github.com/google/flatbuffers/go"
-
 	"github.com/apache/apisix-go-plugin-runner/internal/plugin"
 	"github.com/apache/apisix-go-plugin-runner/internal/util"
 	"github.com/apache/apisix-go-plugin-runner/pkg/log"
+	flatbuffers "github.com/google/flatbuffers/go"
 )
 
 const (

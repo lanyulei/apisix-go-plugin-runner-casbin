@@ -18,17 +18,16 @@
 package plugin
 
 import (
+	"github.com/jellydator/ttlcache/v2"
 	"strconv"
 	"sync"
 	"time"
 
-	"github.com/ReneKroon/ttlcache/v2"
+	"github.com/apache/apisix-go-plugin-runner/internal/util"
+	"github.com/apache/apisix-go-plugin-runner/pkg/log"
 	A6 "github.com/api7/ext-plugin-proto/go/A6"
 	pc "github.com/api7/ext-plugin-proto/go/A6/PrepareConf"
 	flatbuffers "github.com/google/flatbuffers/go"
-
-	"github.com/apache/apisix-go-plugin-runner/internal/util"
-	"github.com/apache/apisix-go-plugin-runner/pkg/log"
 )
 
 var (

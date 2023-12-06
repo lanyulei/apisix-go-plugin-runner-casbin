@@ -19,12 +19,11 @@ package server
 
 import (
 	"fmt"
-
-	"github.com/ReneKroon/ttlcache/v2"
-	A6Err "github.com/api7/ext-plugin-proto/go/A6/Err"
-	flatbuffers "github.com/google/flatbuffers/go"
+	"github.com/jellydator/ttlcache/v2"
 
 	"github.com/apache/apisix-go-plugin-runner/internal/util"
+	A6Err "github.com/api7/ext-plugin-proto/go/A6/Err"
+	flatbuffers "github.com/google/flatbuffers/go"
 )
 
 type UnknownType struct {

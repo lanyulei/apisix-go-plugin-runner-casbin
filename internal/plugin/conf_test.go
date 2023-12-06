@@ -25,7 +25,6 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ReneKroon/ttlcache/v2"
 	A6 "github.com/api7/ext-plugin-proto/go/A6"
 	pc "github.com/api7/ext-plugin-proto/go/A6/PrepareConf"
 	flatbuffers "github.com/google/flatbuffers/go"

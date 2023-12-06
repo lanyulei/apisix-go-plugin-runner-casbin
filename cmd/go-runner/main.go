@@ -100,9 +100,9 @@ func newRunCommand() *cobra.Command {
 		Short: "run",
 		PreRun: func(cmd *cobra.Command, args []string) {
 			// 加载配置文件
-			viper.SetConfigFile("/usr/local/apisix/plugin/go-runner/config/config.yml") // 指定配置文件
-			err := viper.ReadInConfig()                                                 // 读取配置信息
-			if err != nil {                                                             // 读取配置信息失败
+			viper.SetConfigFile("/usr/local/apisix/plugins/casbin-auth/config/config.yml") // 指定配置文件
+			err := viper.ReadInConfig()                                                    // 读取配置信息
+			if err != nil {                                                                // 读取配置信息失败
 				log.Fatalf("Fatal error config file: %s \n", err)
 			}
 
